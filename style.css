@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("imgs/Fundo.png");
+    background-size: 33.5%;
+    overflow: hidden;
+}
+
+div#maior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90%;
+
+    & img {
+        width: 70%;
+    }
+}
+
+div#menor {
+    
+    position: relative;
+    height: 10%;
+
+    & img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 20%;
+    }
+}
+
+div#buttons {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+
+    & #prox {
+        position: absolute;
+        top: calc(50% - 30px);
+        right: 25px;
+        z-index: 1;
+    }
+
+    & #prev {
+        position: absolute;
+        top: calc(50% - 30px);
+        left: 25px;
+        z-index: 1;
+    }
+
+}
+
+#prev:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+#prev:active {
+    transition: all 0.1s;
+    transform: scale(1.15)
+}
+
+#prox:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+#prox:active {
+    transition: all 0.1s;
+    transform: scale(1.15)
+}
+
+@keyframes heart {
+    from{
+        transform: scale(1.05);
+    }  
+
+    to{
+        transform: scale(1);
+    }
+}
