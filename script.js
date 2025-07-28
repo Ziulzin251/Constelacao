@@ -76,7 +76,7 @@ function img(number) {
                 imgPrin.src = "imgs/Galaxia.png"
                 imgPrin.style.opacity = '1'
 
-                imgSec.src = "imgs/sol.png"
+                imgSec.src = "imgs/Sol.png"
                 imgSec.style.opacity = '1'
                 imgSec.style.width = "10%"
 
